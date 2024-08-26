@@ -1,0 +1,29 @@
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+}
+
+.machine {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+  height: 100%; /* Fill the available height */
+}
+
+/* Ensure each slot takes up equal space */
+.slots > div {
+  padding: 10px; /* Optional: Add padding for spacing */
+  border: 1px solid #ccc; /* Optional: Add border to visualize the divs */
+  align-content: center;
+  text-align: center;
+}
